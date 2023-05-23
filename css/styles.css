@@ -1,0 +1,186 @@
+#stu{
+    text-decoration: underline;
+}
+body{
+    margin:0;
+    text-align: center;
+     /* text-align:center; will center every element present in body tag only the elemets whose width is changed or set 
+    there we have to use auto in margin as shown in h1 */
+    /* we can specify font like this font-family: verdana, sans-serif; */
+    /* these fonts we have added from goggle fonts*/
+    font-family: 'Merriweather', serif;
+    color:#40514E;
+}
+h1{
+    color: #66BFBF;
+    /*
+    width:10%;
+    margin:0 auto 0 auto;
+    margin:top right bottom left;
+    this will center the h1 element
+    */
+    font-family: 'Sacramento', cursive;
+    font-size:5.625rem;
+    margin: 50px auto 0 auto;
+    /* 100%=16px
+       90px=(90*100)/16=562.5%
+
+       1em=16px
+       90px=90/16=5.625em
+
+       px is static size means if we specify it in code as 90px and someone changes their preferences on their computer to 
+       see website content as too large then this size will not get affected it will as it is. And the other difference is
+       that we specify the font-size in body tag as 20 px and also we specify font-size in h1(which is a child tag of body)
+       as 90px then the size of h1 will not affect it will be 90px only.
+       
+       % and em are dynamic sizes means if we specify it in code as 562.5% or 5.625em and someone changes their preferences 
+       on their computer to see website content as too large then this size will get affected it will become more larger.
+       And the other difference is that if we specify the font-size in body tag as 90% or 2em and also we specify font-size
+       in h1(which is a child tag of body) as 562.5% or 5.625em then the size of h1 will be (bodySize + h1Size) it means that
+       the size of body and h1 will be added and the answer will be the final size of h1.
+
+       rem(root em it is like em only but it tells browser that this will be the final value for the specified tag) size
+       does not affected by the size of parent class. It means that if we specify h1 as 5.625rem then the size of h1 will
+       be 5.625rem only the size of body tag will not affect it.
+    */   
+    /* line-height:2;
+    we can change the space above and below(or you can say between two lines) of h1 by using line height.*/
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.5rem;
+    /* 40px=40/16=2.5rem */
+    color: #66BFBF;
+    font-weight: normal;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E;
+}
+a{
+    color:#11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+.top-cloud{
+    position:absolute;
+    right:300px;
+    top:40px;
+}
+.bottom-cloud{
+    position:absolute;
+    left:250px;
+    bottom:300px;
+}
+.top-container{
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    background-color: #e4f9f5;
+}
+.comp{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    float:left;
+    margin-right:30px;
+}
+.teach{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    float:right;
+    margin-left:30px;
+}
+.skill-row{
+    width:50%;
+    margin:100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+hr{
+    border-style:none;
+    border-top-style: dotted;
+    border-color:grey;
+    border-width:5px;
+    width:5%;
+}
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+} 
+.btn:hover {
+    background:  #30e3cb;
+    background-image: -webkit-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: -moz-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: -ms-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: -o-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: linear-gradient(to bottom,  #30e3cb,  #2bc4ad);
+    text-decoration: none;
+}
+.bottom-container{
+    margin-top: 50px;
+    height: 150px;
+    background-color:#66BFBF;
+    line-height: 3;
+    padding-top:50px;
+}
+.footer-link{
+    text-decoration: none;
+    color:#11999E;
+    margin-right:35px;
+}
+.footer-link:hover{
+    color:#EAF6F6;
+}
+.footer-par{
+    color:#EAF6F6;
+    font-size: 0.75rem;
+    padding:20px 0px;
+}
+.contact-me{
+    margin-top:75px;
+    margin-bottom:75px;
+}
+.about{
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.comp-skills-description{
+    clear:left;
+}
+.teach-skills-description{
+    clear:right;
+}
+float:left float image to the left and all text to its right
+   clear is just opposite of float clear:left; takes all selected class elements to the left and below the image.
+   It means clear the left margin. same for right.
+   use float only to wrap the text around the image not for positioning
+*/
+
+/* there are two main font families serif and sans-serif by default the font-family is serif 
+    for most of the browser has default serif as times and the default sans-serif is arial
+    ****EMOTION BEHIND FONTS****
+    serif :- traditional stable respectable authoritative
+    sans-serif:- simple sensible straight-forward
+    script(cursive):- elegant personal creative
+    display:- friendly loud amusing
+    modern:- stylish chic smart
+    *just stick to 2 fonts in one design
+    like heading serif and body in sans-serif or opposite of it or change the weightage like
+     bold or black of heading and light of body*/
+
+/* meaning of hover means when our cursor goes on it */
